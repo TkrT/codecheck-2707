@@ -57,7 +57,7 @@ class Bot():
       while (i < len(command)):
         description += command[i] + " "
         i = i + 1
-      description.rstrip(" ")
+      description = description.rstrip()
 
       self.db.OpenDB()
       self.db.AddToDo(name, description)

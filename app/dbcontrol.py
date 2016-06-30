@@ -37,5 +37,5 @@ class DB():
     data = ""
     for record in records:
         data += record[0] + " " + record[1] + "\n"
-    data.rstrip("\n")
+    data = data.rstrip()
     return data
