@@ -49,10 +49,10 @@ def receive_send(websocket, path):
 
   bot = Bot()
 
-  try:
-    # Add connection to list
-    users.connected.add(websocket)
+  # Add connection to list
+  users.connected.add(websocket)
 
+  try:
     # Loop until connection close or Ctrl-C
     while True:
       # Receive message
