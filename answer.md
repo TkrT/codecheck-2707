@@ -3,7 +3,7 @@
 
 - チャットボットをデプロイしたサーバーのURL: http://sprint-botchallenge.cloudapp.net/
 - 開発に利用したリポジトリのURL: https://github.com/TkrT/codecheck-2707.git
-- デプロイに使ったサービス: Azure (Virtual Machines (Basic A2): Windows Server 2012 R2)
+- デプロイに使ったサービス: Azure (Virtual Machines (Basic A2): Windows Server 2012 R2 Datacenter)
 
 ## STEP2. 必須機能の実装
 必須機能を実装する上で、創意工夫した点があれば記述してください。
