@@ -30,6 +30,9 @@ class Bot():
 
   # Handle "todo"
   def __todo(self, command):
+    if (len(command) < 3):
+      return ""
+
     try:
       if (command[2] == "add"):
         return self.__todo_add(command)
@@ -62,6 +65,8 @@ class Bot():
 
       return "todo added"
 
+    return ""
+
   # Handle "todo delete"
   def __todo_delete(self, command):
     if (len(command) >= 4):
@@ -72,6 +77,8 @@ class Bot():
       self.db.CloseDB()
 
       return "todo deleted"
+
+    return ""
 
   # Handle "todo list"
   def __todo_list(self, command):
